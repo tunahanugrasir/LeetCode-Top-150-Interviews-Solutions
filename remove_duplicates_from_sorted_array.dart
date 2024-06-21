@@ -9,7 +9,8 @@ int removeDuplicates(List<int> nums) {
   lengthCalculateOfArray(nums);
 
   int length = lengthCalculateOfArray(nums);
-  int k = 1;
+  int k = 1; //first elements is unique
+
   for (int i = 1; i < length; i++) {
     if (nums[i] != nums[i - 1]) {
       nums[k] = nums[i];
